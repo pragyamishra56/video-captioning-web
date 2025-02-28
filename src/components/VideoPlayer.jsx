@@ -9,14 +9,13 @@ const VideoPlayer = ({ videoUrl, captions }) => {
       if (videoRef.current) {
         const currentTime = videoRef.current.currentTime;
 
-        console.log("Current Time:", currentTime); // ✅ DEBUGGING STEP
+        console.log("Current Time:", currentTime); 
 
-        // Sabhi captions ke timestamps ka check karo
         const matchingCaption = captions.find(
-          (cap) => Math.abs(cap.timestamp - currentTime) <= 0.3 // ✅ Range ko tight kar diya
+          (cap) => Math.abs(cap.timestamp - currentTime) <= 0.3 
         );
 
-        console.log("Matching Caption:", matchingCaption); // ✅ DEBUGGING STEP
+        console.log("Matching Caption:", matchingCaption);
 
         setCurrentCaption(matchingCaption ? matchingCaption.text : "");
       }
