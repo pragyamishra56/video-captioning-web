@@ -1,5 +1,6 @@
 {
   "name": "video-captioning-web",
+  "homepage": "https://pragyamishra56.github.io/video-captioning-web",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run dev",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
